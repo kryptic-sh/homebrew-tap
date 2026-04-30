@@ -1,25 +1,28 @@
 class Hjkl < Formula
   desc "Vim-modal terminal editor: standalone TUI built on the hjkl engine"
   homepage "https://hjkl.kryptic.sh"
-  version "0.3.1"
+  version "0.3.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kryptic-sh/hjkl/releases/download/v#{version}/hjkl-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "708b18734c3220a13db6848f7e5f0106c3b46200fbb31cd9c4d7b1fe66f1cd74"
+      sha256 "fb59393a860fc7fb9d344c3b5d88577180028657acfed3e108f09b11cb34b004"
     else
       url "https://github.com/kryptic-sh/hjkl/releases/download/v#{version}/hjkl-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "729632d88bcfbf5ed16d47bd450dadeb69d6e2dcd023195ad1f96553687153b3"
+      sha256 "107f066edee8c462dc75567cdb50f48c9a1ebba73a9a8bf0be1f854d939d3945"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/kryptic-sh/hjkl/releases/download/v#{version}/hjkl-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "618812ca1e111d0b63484c6341371a1809977321c75e822141dd69ce541a88e6"
+      sha256 "ba0e3441f05a6c97539a26a2d6a27c2ac2a590b64b0b2633bcf39c78659802a7"
     end
-    # Linux aarch64 lands in 0.3.2+
+    on_arm do
+      url "https://github.com/kryptic-sh/hjkl/releases/download/v#{version}/hjkl-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "efa7559244668f505f176e22386bb5fffa4309b0e5d29369c8b7c9f176280b53"
+    end
   end
 
   def install
