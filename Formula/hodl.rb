@@ -5,17 +5,17 @@
 class Hodl < Formula
   desc "Light crypto wallet for the terminal — multi-chain TUI built on ratatui"
   homepage "https://hodl.kryptic.sh/"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/kryptic-sh/hodl/releases/download/v0.3.1/hodl-v0.3.1-aarch64-apple-darwin.tar.gz"
-      sha256 "f59ca764028f338be49600d539d58ff8c476adf4c4919f399835083c0a9ab8cb"
+      url "https://github.com/kryptic-sh/hodl/releases/download/v0.4.0/hodl-v0.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "21a595fa1d6110e24cb6ecb70c32e4d39e7b1836aa2495522a7ec82b5be84e93"
     end
     on_intel do
-      url "https://github.com/kryptic-sh/hodl/releases/download/v0.3.1/hodl-v0.3.1-x86_64-apple-darwin.tar.gz"
-      sha256 "87fc59e68e9383f3caf43956907ae2ae55a72729bac49541aebc920e9298c122"
+      url "https://github.com/kryptic-sh/hodl/releases/download/v0.4.0/hodl-v0.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "65c67a1c1261fe090d2e98873f13512474c1a04cac9c8586ceb1e8ceb52f2365"
     end
   end
 
