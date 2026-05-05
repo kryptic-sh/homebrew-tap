@@ -5,17 +5,17 @@
 class Hjkl < Formula
   desc "Vim-modal terminal editor: standalone TUI built on the hjkl engine"
   homepage "https://hjkl.kryptic.sh/"
-  version "0.11.1"
+  version "0.11.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/kryptic-sh/hjkl/releases/download/v0.11.1/hjkl-v0.11.1-aarch64-apple-darwin.tar.gz"
-      sha256 "92f950165ae9489e60ce607536a45a6a029270bf8e55461089ddf5fc299e00b2"
+      url "https://github.com/kryptic-sh/hjkl/releases/download/v0.11.2/hjkl-v0.11.2-aarch64-apple-darwin.tar.gz"
+      sha256 "0034d51dacbb3a833d1f488ec7d5639b2d671d765520a5f7f03ff77acf18cdd4"
     end
     on_intel do
-      url "https://github.com/kryptic-sh/hjkl/releases/download/v0.11.1/hjkl-v0.11.1-x86_64-apple-darwin.tar.gz"
-      sha256 "cf4461cb8c2518090672e41c625005e074f30f346000f7bec0fc06ac5dcb33e1"
+      url "https://github.com/kryptic-sh/hjkl/releases/download/v0.11.2/hjkl-v0.11.2-x86_64-apple-darwin.tar.gz"
+      sha256 "4efd6940a2b71490cc97c7cf89e573ed88ceb138fe88867050c4ac5a557ecad7"
     end
   end
 
