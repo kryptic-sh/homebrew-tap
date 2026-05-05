@@ -5,17 +5,17 @@
 class Inbx < Formula
   desc "Encrypted local-first email client for the terminal"
   homepage "https://inbx.kryptic.sh/"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/kryptic-sh/inbx/releases/download/v0.4.0/inbx-v0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "e3f5d4e1641023047d1908b3efa035aa6a5fe76a37f37074c06deeca30f223e1"
+      url "https://github.com/kryptic-sh/inbx/releases/download/v0.5.0/inbx-v0.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "4e33e08f52cb26d144d4eeccf98a857de18d751e8f3ddc43fc4da4f1cc8d75c9"
     end
     on_intel do
-      url "https://github.com/kryptic-sh/inbx/releases/download/v0.4.0/inbx-v0.4.0-x86_64-apple-darwin.tar.gz"
-      sha256 "1886f6f043ae37172a462553d3b1638404f68f7db1dff25edf3efb44f3206343"
+      url "https://github.com/kryptic-sh/inbx/releases/download/v0.5.0/inbx-v0.5.0-x86_64-apple-darwin.tar.gz"
+      sha256 "faf726e47a284ab4da6bc2de0a27ff2f12a722f7eb159d0cdc4b6f0c54045eda"
     end
   end
 
