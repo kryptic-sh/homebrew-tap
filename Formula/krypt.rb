@@ -5,17 +5,17 @@
 class Krypt < Formula
   desc "Cross-platform dotfiles manager. Rust binary. Config-driven."
   homepage "https://github.com/kryptic-sh/krypt"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/kryptic-sh/krypt/releases/download/v0.2.1/krypt-v0.2.1-aarch64-apple-darwin.tar.gz"
-      sha256 "73b1e48cc4cb039a8156724daa0db18d978ecf081f9cb5d3478f51686a1535f0"
+      url "https://github.com/kryptic-sh/krypt/releases/download/v0.2.2/krypt-v0.2.2-aarch64-apple-darwin.tar.gz"
+      sha256 "4e0f4d32d735d64119252718655fe610f78c990c175d35bf9cbb300ded3de785"
     end
     on_intel do
-      url "https://github.com/kryptic-sh/krypt/releases/download/v0.2.1/krypt-v0.2.1-x86_64-apple-darwin.tar.gz"
-      sha256 "1e0f6704ad7fe96809bb4b835a75ab80489cc1c7e438c9c7c3c26ac2db60a85e"
+      url "https://github.com/kryptic-sh/krypt/releases/download/v0.2.2/krypt-v0.2.2-x86_64-apple-darwin.tar.gz"
+      sha256 "3668d2d6aa4243e83a740b9f8986418be6d0b40de58c9734f7252e542adfa579"
     end
   end
 
