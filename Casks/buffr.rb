@@ -1,6 +1,6 @@
 cask "buffr" do
-  version "0.13.8"
-  sha256 "7e86706a8e8a0991d1891105d09d9386293089d1b7c0c056ee543448b5b270f4"
+  version "0.13.9"
+  sha256 "e22b43122d0668d79c6a4378808d2a7ada8123f190c635e93103a321e665202c"
 
   url "https://github.com/kryptic-sh/buffr/releases/download/v#{version}/buffr-#{version}-arm64.dmg"
   name "buffr"
