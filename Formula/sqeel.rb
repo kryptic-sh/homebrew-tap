@@ -5,17 +5,17 @@
 class Sqeel < Formula
   desc "Modal SQL workbench for the terminal"
   homepage "https://sqeel.kryptic.sh/"
-  version "0.4.18"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/kryptic-sh/sqeel/releases/download/v0.4.18/sqeel-v0.4.18-aarch64-apple-darwin.tar.gz"
-      sha256 "44bddc05902c0eed309fb094e46472e5d0138b0cbf2e29115502f682d2386de2"
+      url "https://github.com/kryptic-sh/sqeel/releases/download/v0.5.0/sqeel-v0.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "c13a036aba14db1c910dbdb75bdf944e5eb39344bb92d67c69c1ccd9ce3b5875"
     end
     on_intel do
-      url "https://github.com/kryptic-sh/sqeel/releases/download/v0.4.18/sqeel-v0.4.18-x86_64-apple-darwin.tar.gz"
-      sha256 "c96a3594d2c2e730e0c47c286dc8c32d489b0d6a9b872794e93e902a3825c426"
+      url "https://github.com/kryptic-sh/sqeel/releases/download/v0.5.0/sqeel-v0.5.0-x86_64-apple-darwin.tar.gz"
+      sha256 "255e844ee910ba711005279088b70c834824b28b5a3d554ee19fbbd6423bf42f"
     end
   end
 
