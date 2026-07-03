@@ -5,17 +5,17 @@
 class Gpur < Formula
   desc "btop-style GPU monitor TUI — NVIDIA, AMD, Apple Silicon"
   homepage "https://github.com/kryptic-sh/gpur"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/kryptic-sh/gpur/releases/download/v0.8.0/gpur-v0.8.0-aarch64-apple-darwin.tar.gz"
-      sha256 "0189c6ea80bdde15cda53572fc55d91cd6811c182838835b59f2013c2a1458e4"
+      url "https://github.com/kryptic-sh/gpur/releases/download/v0.8.1/gpur-v0.8.1-aarch64-apple-darwin.tar.gz"
+      sha256 "6404adb592d1a9780960dc83caafbebf9c1302bcc96a9c771c4f4ca98bfde3e2"
     end
     on_intel do
-      url "https://github.com/kryptic-sh/gpur/releases/download/v0.8.0/gpur-v0.8.0-x86_64-apple-darwin.tar.gz"
-      sha256 "ea4fcae74a0ecf94b159a3ac9fa195d1063e827ff8f56cdbbced27fcc0c6c1f6"
+      url "https://github.com/kryptic-sh/gpur/releases/download/v0.8.1/gpur-v0.8.1-x86_64-apple-darwin.tar.gz"
+      sha256 "7681cb0d33260fe899ff7ab33206084389903b21887cfe17f9cc1f8ed056b2e5"
     end
   end
 
