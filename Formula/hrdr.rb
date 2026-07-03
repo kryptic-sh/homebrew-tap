@@ -5,22 +5,27 @@
 class Hrdr < Formula
   desc "herder — fast, agentic coding harness for OpenAI-compatible models"
   homepage "https://github.com/kryptic-sh/hrdr"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/kryptic-sh/hrdr/releases/download/v0.1.0/hrdr-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "9957e800243cdcde81a1a7ff44f33927e6a43d99f102bddc6c741012ae2344ed"
+      url "https://github.com/kryptic-sh/hrdr/releases/download/v0.2.0/hrdr-v0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "a9472557a39fdfed8da4fe9f0e39edd825f84b21b5d1b63d9946c40ff58f42ff"
     end
     on_intel do
-      url "https://github.com/kryptic-sh/hrdr/releases/download/v0.1.0/hrdr-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "0538ef141a12ce3ceacb84f4b97f9ffd2d3003ff706ff754236ea65acfa0e161"
+      url "https://github.com/kryptic-sh/hrdr/releases/download/v0.2.0/hrdr-v0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "cb26f46cca6d44e7e3907de06241f78f7ea19ee7fc2fc6856f9f0604a3717de3"
     end
   end
 
   def install
     bin.install "hrdr"
+    # Default shell_parameter_format appends the shell name:
+    # `hrdr --completions bash|zsh|fish`.
+    generate_completions_from_executable(bin/"hrdr", "--completions",
+                                         shells: [:bash, :zsh, :fish])
+    (man1/"hrdr.1").write Utils.safe_popen_read(bin/"hrdr", "--man")
   end
 
   test do
