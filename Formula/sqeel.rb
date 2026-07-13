@@ -5,22 +5,25 @@
 class Sqeel < Formula
   desc "Modal SQL workbench for the terminal"
   homepage "https://sqeel.kryptic.sh/"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/kryptic-sh/sqeel/releases/download/v0.5.0/sqeel-v0.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "c13a036aba14db1c910dbdb75bdf944e5eb39344bb92d67c69c1ccd9ce3b5875"
+      url "https://github.com/kryptic-sh/sqeel/releases/download/v0.6.0/sqeel-v0.6.0-aarch64-apple-darwin.tar.gz"
+      sha256 "497164c582815e2e64e009d699f50dfa52974aa512d650057b0ea95320f46584"
     end
     on_intel do
-      url "https://github.com/kryptic-sh/sqeel/releases/download/v0.5.0/sqeel-v0.5.0-x86_64-apple-darwin.tar.gz"
-      sha256 "255e844ee910ba711005279088b70c834824b28b5a3d554ee19fbbd6423bf42f"
+      url "https://github.com/kryptic-sh/sqeel/releases/download/v0.6.0/sqeel-v0.6.0-x86_64-apple-darwin.tar.gz"
+      sha256 "fdedc5b2828af0cc1ed0eaaa90992810414e8e8b7bf193c69274b1d320875561"
     end
   end
 
   def install
     bin.install "sqeel"
+    generate_completions_from_executable(bin/"sqeel", "--completions")
+    File.write("sqeel.1", Utils.safe_popen_read(bin/"sqeel", "--man"))
+    man1.install "sqeel.1"
   end
 
   test do
