@@ -11,11 +11,11 @@ class Hjkl < Formula
   on_macos do
     on_arm do
       url "https://github.com/kryptic-sh/hjkl/releases/download/v0.34.0/hjkl-v0.34.0-aarch64-apple-darwin.tar.gz"
-      sha256 "2764066475519c2c0a16aae3b8f9a6666684baa279c7fa40dbf2c30f8a77faf7"
+      sha256 "8bfca4201272c374373aa70f10bf32d3a33db1e02d4d210499cf4a21ef0ef00d"
     end
     on_intel do
       url "https://github.com/kryptic-sh/hjkl/releases/download/v0.34.0/hjkl-v0.34.0-x86_64-apple-darwin.tar.gz"
-      sha256 "7608f283bef32818db61d57b101171635861d4342185f6d0dbf78b8d77b37975"
+      sha256 "8166bf419acba34cef343ece493a8b7bdffe5a122ca416dd71d3521de22406c0"
     end
   end
 
