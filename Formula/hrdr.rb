@@ -5,17 +5,17 @@
 class Hrdr < Formula
   desc "herder — fast, agentic coding harness for OpenAI-compatible models"
   homepage "https://github.com/kryptic-sh/hrdr"
-  version "0.6.2"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/kryptic-sh/hrdr/releases/download/v0.6.2/hrdr-v0.6.2-aarch64-apple-darwin.tar.gz"
-      sha256 "06ff6990926fdd7e83ea58e754d437d72fec1144da990d39207a03b274a85930"
+      url "https://github.com/kryptic-sh/hrdr/releases/download/v0.7.0/hrdr-v0.7.0-aarch64-apple-darwin.tar.gz"
+      sha256 "1e6505bbfce4d2909ddd5195b14a7900ff7f265b65c66027488c2eb9013de84e"
     end
     on_intel do
-      url "https://github.com/kryptic-sh/hrdr/releases/download/v0.6.2/hrdr-v0.6.2-x86_64-apple-darwin.tar.gz"
-      sha256 "5a4fed96911fa7c1be2b528fcc99919c2c93ba31e917f34fe40cb2f0f0874644"
+      url "https://github.com/kryptic-sh/hrdr/releases/download/v0.7.0/hrdr-v0.7.0-x86_64-apple-darwin.tar.gz"
+      sha256 "a2f21e622053bb13a6003cfc83bd85133bf29358799cc436439c0fdb71eb6a35"
     end
   end
 
