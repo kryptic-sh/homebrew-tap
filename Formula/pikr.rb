@@ -5,17 +5,17 @@
 class Pikr < Formula
   desc "Vim-modal application launcher — rofi replacement built on floem"
   homepage "https://pikr.kryptic.sh/"
-  version "0.8.8"
+  version "0.8.9"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/kryptic-sh/pikr/releases/download/v0.8.8/pikr-v0.8.8-aarch64-apple-darwin.tar.gz"
-      sha256 "fe677c076330870cf896324321565b671164a20b368b4e29099823927a991773"
+      url "https://github.com/kryptic-sh/pikr/releases/download/v0.8.9/pikr-v0.8.9-aarch64-apple-darwin.tar.gz"
+      sha256 "df0ac10360cbfb11aac4006b5aea9fc3fcba41b1e0591f9da5118abefb787f44"
     end
     on_intel do
-      url "https://github.com/kryptic-sh/pikr/releases/download/v0.8.8/pikr-v0.8.8-x86_64-apple-darwin.tar.gz"
-      sha256 "a5eaff05baf00c837cefd48c9b95a5ba9612ce9358093671b4f26dbe1ac510f3"
+      url "https://github.com/kryptic-sh/pikr/releases/download/v0.8.9/pikr-v0.8.9-x86_64-apple-darwin.tar.gz"
+      sha256 "8d29f353deb0f8f27f2907d49bab93eaa94f6bd8155668c9ea217cd4d26c1303"
     end
   end
 
