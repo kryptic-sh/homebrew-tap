@@ -5,17 +5,17 @@
 class Tmxr < Formula
   desc "Tmux-style terminal multiplexer for Linux, macOS and Windows"
   homepage "https://github.com/kryptic-sh/tmxr"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/kryptic-sh/tmxr/releases/download/v0.6.0/tmxr-v0.6.0-aarch64-apple-darwin.tar.gz"
-      sha256 "1ca20a626e00fdd6b1fd18901b75419119191e9a188a273250068b88a5cf0b4b"
+      url "https://github.com/kryptic-sh/tmxr/releases/download/v0.7.0/tmxr-v0.7.0-aarch64-apple-darwin.tar.gz"
+      sha256 "2b35a90c929d4140cb128e73bb92ff5eb2d6a4da7783bbc1189d3487acddc466"
     end
     on_intel do
-      url "https://github.com/kryptic-sh/tmxr/releases/download/v0.6.0/tmxr-v0.6.0-x86_64-apple-darwin.tar.gz"
-      sha256 "7f7158fb268d00f24accf1e6d2cf67984f6e4c86a42350dd30f88ced88c8ae01"
+      url "https://github.com/kryptic-sh/tmxr/releases/download/v0.7.0/tmxr-v0.7.0-x86_64-apple-darwin.tar.gz"
+      sha256 "2d4330ffbcbab869a1b086c0243df3008850aa91915a0c00864136c2fce09276"
     end
   end
 
