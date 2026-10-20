@@ -8,15 +8,18 @@ class Crcbl < Formula
   version "0.7.0"
   license "MIT"
 
-  on_macos do
-    on_arm do
-      url "https://github.com/kryptic-sh/crcbl/releases/download/v0.7.0/crcbl-v0.7.0-aarch64-apple-darwin.tar.gz"
-      sha256 "3c8836125b8334316b704ef58e026e233eff3e1a7b671eed3e463a803108d45a"
-    end
-    on_intel do
-      url "https://github.com/kryptic-sh/crcbl/releases/download/v0.7.0/crcbl-v0.7.0-x86_64-apple-darwin.tar.gz"
-      sha256 "089ef4875ccd49429c9301f0dc1ccf50b0aa2bc1ddfe91e8b7f8ff12ffc53b68"
-    end
+  # Homebrew loads each formula for every OS and architecture when it taps
+  # the tap, and refuses the whole tap if one has no URL there, so the URLs
+  # stay outside `on_macos`; `depends_on :macos` keeps it macOS-only.
+  depends_on :macos
+
+  on_arm do
+    url "https://github.com/kryptic-sh/crcbl/releases/download/v0.7.0/crcbl-v0.7.0-aarch64-apple-darwin.tar.gz"
+    sha256 "3c8836125b8334316b704ef58e026e233eff3e1a7b671eed3e463a803108d45a"
+  end
+  on_intel do
+    url "https://github.com/kryptic-sh/crcbl/releases/download/v0.7.0/crcbl-v0.7.0-x86_64-apple-darwin.tar.gz"
+    sha256 "089ef4875ccd49429c9301f0dc1ccf50b0aa2bc1ddfe91e8b7f8ff12ffc53b68"
   end
 
   def install

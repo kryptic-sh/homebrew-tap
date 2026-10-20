@@ -8,15 +8,18 @@ class Hrdr < Formula
   version "0.17.1"
   license "MIT"
 
-  on_macos do
-    on_arm do
-      url "https://github.com/kryptic-sh/hrdr/releases/download/v0.17.1/hrdr-v0.17.1-aarch64-apple-darwin.tar.gz"
-      sha256 "04ce90f6df829d538b0d39e08c904cda583bd53ffb7f845be9c8d736e18fb154"
-    end
-    on_intel do
-      url "https://github.com/kryptic-sh/hrdr/releases/download/v0.17.1/hrdr-v0.17.1-x86_64-apple-darwin.tar.gz"
-      sha256 "9bcda2911e322ae497362c20744b974b43c64db1d1368b2d4949033473ef9d4d"
-    end
+  # Homebrew loads each formula for every OS and architecture when it taps
+  # the tap, and refuses the whole tap if one has no URL there, so the URLs
+  # stay outside `on_macos`; `depends_on :macos` keeps it macOS-only.
+  depends_on :macos
+
+  on_arm do
+    url "https://github.com/kryptic-sh/hrdr/releases/download/v0.17.1/hrdr-v0.17.1-aarch64-apple-darwin.tar.gz"
+    sha256 "04ce90f6df829d538b0d39e08c904cda583bd53ffb7f845be9c8d736e18fb154"
+  end
+  on_intel do
+    url "https://github.com/kryptic-sh/hrdr/releases/download/v0.17.1/hrdr-v0.17.1-x86_64-apple-darwin.tar.gz"
+    sha256 "9bcda2911e322ae497362c20744b974b43c64db1d1368b2d4949033473ef9d4d"
   end
 
   def install

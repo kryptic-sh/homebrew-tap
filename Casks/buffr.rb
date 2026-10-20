@@ -7,7 +7,7 @@ cask "buffr" do
   desc "Vim-flavored web browser built on CEF"
   homepage "https://kryptic.sh"
 
-  depends_on macos: ">= :ventura", arch: :arm64
+  depends_on macos: :ventura, arch: :arm64
 
   app "Buffr.app"
 

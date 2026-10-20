@@ -8,15 +8,18 @@ class Krypt < Formula
   version "0.4.2"
   license "MIT"
 
-  on_macos do
-    on_arm do
-      url "https://github.com/kryptic-sh/krypt/releases/download/v0.4.2/krypt-v0.4.2-aarch64-apple-darwin.tar.gz"
-      sha256 "8ef4a5d1add321243c71262b821776de6c97be3ce3e17ce8435517ec92de4dd7"
-    end
-    on_intel do
-      url "https://github.com/kryptic-sh/krypt/releases/download/v0.4.2/krypt-v0.4.2-x86_64-apple-darwin.tar.gz"
-      sha256 "7fddd8ef3bb9f8409dfd262b3af5d4bb9a69753a2e5e60843c2587cfdfe676dd"
-    end
+  # Homebrew loads each formula for every OS and architecture when it taps
+  # the tap, and refuses the whole tap if one has no URL there, so the URLs
+  # stay outside `on_macos`; `depends_on :macos` keeps it macOS-only.
+  depends_on :macos
+
+  on_arm do
+    url "https://github.com/kryptic-sh/krypt/releases/download/v0.4.2/krypt-v0.4.2-aarch64-apple-darwin.tar.gz"
+    sha256 "8ef4a5d1add321243c71262b821776de6c97be3ce3e17ce8435517ec92de4dd7"
+  end
+  on_intel do
+    url "https://github.com/kryptic-sh/krypt/releases/download/v0.4.2/krypt-v0.4.2-x86_64-apple-darwin.tar.gz"
+    sha256 "7fddd8ef3bb9f8409dfd262b3af5d4bb9a69753a2e5e60843c2587cfdfe676dd"
   end
 
   def install

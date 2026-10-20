@@ -8,15 +8,18 @@ class Pikr < Formula
   version "0.8.13"
   license "MIT"
 
-  on_macos do
-    on_arm do
-      url "https://github.com/kryptic-sh/pikr/releases/download/v0.8.13/pikr-v0.8.13-aarch64-apple-darwin.tar.gz"
-      sha256 "c9f63e5f07bb0f647db34c9016d4e08180e0598f61271ba9a1bd8635faa40dd3"
-    end
-    on_intel do
-      url "https://github.com/kryptic-sh/pikr/releases/download/v0.8.13/pikr-v0.8.13-x86_64-apple-darwin.tar.gz"
-      sha256 "42d71e8e203c9f238c5a8a1d7339604e35dcc335776f5e3d642823564d9fb8cb"
-    end
+  # Homebrew loads each formula for every OS and architecture when it taps
+  # the tap, and refuses the whole tap if one has no URL there, so the URLs
+  # stay outside `on_macos`; `depends_on :macos` keeps it macOS-only.
+  depends_on :macos
+
+  on_arm do
+    url "https://github.com/kryptic-sh/pikr/releases/download/v0.8.13/pikr-v0.8.13-aarch64-apple-darwin.tar.gz"
+    sha256 "c9f63e5f07bb0f647db34c9016d4e08180e0598f61271ba9a1bd8635faa40dd3"
+  end
+  on_intel do
+    url "https://github.com/kryptic-sh/pikr/releases/download/v0.8.13/pikr-v0.8.13-x86_64-apple-darwin.tar.gz"
+    sha256 "42d71e8e203c9f238c5a8a1d7339604e35dcc335776f5e3d642823564d9fb8cb"
   end
 
   def install

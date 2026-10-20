@@ -8,15 +8,18 @@ class Hjkl < Formula
   version "0.43.1"
   license "MIT"
 
-  on_macos do
-    on_arm do
-      url "https://github.com/kryptic-sh/hjkl/releases/download/v0.43.1/hjkl-v0.43.1-aarch64-apple-darwin.tar.gz"
-      sha256 "4404fb152d478a3941d0ea6001e893779bead380dad3948a091e1f1c4ac44940"
-    end
-    on_intel do
-      url "https://github.com/kryptic-sh/hjkl/releases/download/v0.43.1/hjkl-v0.43.1-x86_64-apple-darwin.tar.gz"
-      sha256 "164f1ea6de03d43ebe3013a51a8d9ac6d459bf9a903e98e57108505b1f535688"
-    end
+  # Homebrew loads each formula for every OS and architecture when it taps
+  # the tap, and refuses the whole tap if one has no URL there, so the URLs
+  # stay outside `on_macos`; `depends_on :macos` keeps it macOS-only.
+  depends_on :macos
+
+  on_arm do
+    url "https://github.com/kryptic-sh/hjkl/releases/download/v0.43.1/hjkl-v0.43.1-aarch64-apple-darwin.tar.gz"
+    sha256 "4404fb152d478a3941d0ea6001e893779bead380dad3948a091e1f1c4ac44940"
+  end
+  on_intel do
+    url "https://github.com/kryptic-sh/hjkl/releases/download/v0.43.1/hjkl-v0.43.1-x86_64-apple-darwin.tar.gz"
+    sha256 "164f1ea6de03d43ebe3013a51a8d9ac6d459bf9a903e98e57108505b1f535688"
   end
 
   def install
