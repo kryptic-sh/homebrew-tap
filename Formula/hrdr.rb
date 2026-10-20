@@ -5,7 +5,7 @@
 class Hrdr < Formula
   desc "herder — fast, agentic coding harness for OpenAI-compatible models"
   homepage "https://github.com/kryptic-sh/hrdr"
-  version "0.17.1"
+  version "0.18.0"
   license "MIT"
 
   # Homebrew loads each formula for every OS and architecture when it taps
@@ -14,12 +14,12 @@ class Hrdr < Formula
   depends_on :macos
 
   on_arm do
-    url "https://github.com/kryptic-sh/hrdr/releases/download/v0.17.1/hrdr-v0.17.1-aarch64-apple-darwin.tar.gz"
-    sha256 "04ce90f6df829d538b0d39e08c904cda583bd53ffb7f845be9c8d736e18fb154"
+    url "https://github.com/kryptic-sh/hrdr/releases/download/v0.18.0/hrdr-v0.18.0-aarch64-apple-darwin.tar.gz"
+    sha256 "e77e0140d5633b9bf5633d3993e699a0a74a49f84597401aa602c61adc449f88"
   end
   on_intel do
-    url "https://github.com/kryptic-sh/hrdr/releases/download/v0.17.1/hrdr-v0.17.1-x86_64-apple-darwin.tar.gz"
-    sha256 "9bcda2911e322ae497362c20744b974b43c64db1d1368b2d4949033473ef9d4d"
+    url "https://github.com/kryptic-sh/hrdr/releases/download/v0.18.0/hrdr-v0.18.0-x86_64-apple-darwin.tar.gz"
+    sha256 "02baab9c939f45bae91b940370256bf8648da2159b50812c1505c1699fadf251"
   end
 
   def install
