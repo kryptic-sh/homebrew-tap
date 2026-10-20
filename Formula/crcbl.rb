@@ -5,17 +5,17 @@
 class Crcbl < Formula
   desc "Crucible engine's headless control CLI"
   homepage "https://crcbl.kryptic.sh"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/kryptic-sh/crcbl/releases/download/v0.6.0/crcbl-v0.6.0-aarch64-apple-darwin.tar.gz"
-      sha256 "3d193d18fc8d16335bab1d1df94de51cc2fb44637f29062bd69a6526ef67239f"
+      url "https://github.com/kryptic-sh/crcbl/releases/download/v0.7.0/crcbl-v0.7.0-aarch64-apple-darwin.tar.gz"
+      sha256 "3c8836125b8334316b704ef58e026e233eff3e1a7b671eed3e463a803108d45a"
     end
     on_intel do
-      url "https://github.com/kryptic-sh/crcbl/releases/download/v0.6.0/crcbl-v0.6.0-x86_64-apple-darwin.tar.gz"
-      sha256 "c1615c2ec6ef9ade66c12f8da63b3b9901a0e43de950d7458ab636254f4e6b9b"
+      url "https://github.com/kryptic-sh/crcbl/releases/download/v0.7.0/crcbl-v0.7.0-x86_64-apple-darwin.tar.gz"
+      sha256 "089ef4875ccd49429c9301f0dc1ccf50b0aa2bc1ddfe91e8b7f8ff12ffc53b68"
     end
   end
 
