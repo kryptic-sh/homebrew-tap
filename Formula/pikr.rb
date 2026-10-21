@@ -3,9 +3,9 @@
 # next tag — change `pkg/homebrew/pikr.rb.in` in the upstream repo and
 # let `.github/workflows/ci.yml` rebuild on the next release.
 class Pikr < Formula
-  desc "Vim-modal application launcher — rofi replacement built on floem"
+  desc "Vim-modal application launcher — rofi replacement"
   homepage "https://pikr.kryptic.sh/"
-  version "0.8.13"
+  version "0.9.0"
   license "MIT"
 
   # Homebrew loads each formula for every OS and architecture when it taps
@@ -14,12 +14,12 @@ class Pikr < Formula
   depends_on :macos
 
   on_arm do
-    url "https://github.com/kryptic-sh/pikr/releases/download/v0.8.13/pikr-v0.8.13-aarch64-apple-darwin.tar.gz"
-    sha256 "c9f63e5f07bb0f647db34c9016d4e08180e0598f61271ba9a1bd8635faa40dd3"
+    url "https://github.com/kryptic-sh/pikr/releases/download/v0.9.0/pikr-v0.9.0-aarch64-apple-darwin.tar.gz"
+    sha256 "0561484c5da4f236869e39461e458f02371127f0ee3f4e341f29505b70e009ca"
   end
   on_intel do
-    url "https://github.com/kryptic-sh/pikr/releases/download/v0.8.13/pikr-v0.8.13-x86_64-apple-darwin.tar.gz"
-    sha256 "42d71e8e203c9f238c5a8a1d7339604e35dcc335776f5e3d642823564d9fb8cb"
+    url "https://github.com/kryptic-sh/pikr/releases/download/v0.9.0/pikr-v0.9.0-x86_64-apple-darwin.tar.gz"
+    sha256 "3cef539fae171a49655023ee47b1cb9f9512ed8b8c311c17621ddd4f4bce3fd7"
   end
 
   def install
