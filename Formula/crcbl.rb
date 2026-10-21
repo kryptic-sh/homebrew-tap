@@ -5,7 +5,7 @@
 class Crcbl < Formula
   desc "Crucible engine's headless control CLI"
   homepage "https://crcbl.kryptic.sh"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   # Homebrew loads each formula for every OS and architecture when it taps
@@ -14,12 +14,12 @@ class Crcbl < Formula
   depends_on :macos
 
   on_arm do
-    url "https://github.com/kryptic-sh/crcbl/releases/download/v0.8.0/crcbl-v0.8.0-aarch64-apple-darwin.tar.gz"
-    sha256 "bc41057ce166c424e76ab83b16f9700af689a0c907808ae39a9d62d128711ecc"
+    url "https://github.com/kryptic-sh/crcbl/releases/download/v0.8.1/crcbl-v0.8.1-aarch64-apple-darwin.tar.gz"
+    sha256 "9d3edf785ac2953261609a30e0cc3c736f45d78c14d8a2d5765ecb5f3d2e7673"
   end
   on_intel do
-    url "https://github.com/kryptic-sh/crcbl/releases/download/v0.8.0/crcbl-v0.8.0-x86_64-apple-darwin.tar.gz"
-    sha256 "f80c2e7d19184e4d0f935b0eb6d35e14276fd5fb0db3ced7881a07785ca4a7da"
+    url "https://github.com/kryptic-sh/crcbl/releases/download/v0.8.1/crcbl-v0.8.1-x86_64-apple-darwin.tar.gz"
+    sha256 "cec9772572cd3430df12f552b37b1b380515f4d6bb588e250b0541827fdea435"
   end
 
   def install
