@@ -5,7 +5,7 @@
 class Tmxr < Formula
   desc "Tmux-style terminal multiplexer for Linux, macOS and Windows"
   homepage "https://github.com/kryptic-sh/tmxr"
-  version "0.10.0"
+  version "0.11.0"
   license "MIT"
 
   # Homebrew loads each formula for every OS and architecture when it taps
@@ -14,12 +14,12 @@ class Tmxr < Formula
   depends_on :macos
 
   on_arm do
-    url "https://github.com/kryptic-sh/tmxr/releases/download/v0.10.0/tmxr-v0.10.0-aarch64-apple-darwin.tar.gz"
-    sha256 "109f6865ed67b5da4a602bf64b29f90c4f256e1bf6394c16d5af28a6e85cbba3"
+    url "https://github.com/kryptic-sh/tmxr/releases/download/v0.11.0/tmxr-v0.11.0-aarch64-apple-darwin.tar.gz"
+    sha256 "55c86f9926839bc0b76643765e789e4625f5ced27d243a6c17b4b656e165df9d"
   end
   on_intel do
-    url "https://github.com/kryptic-sh/tmxr/releases/download/v0.10.0/tmxr-v0.10.0-x86_64-apple-darwin.tar.gz"
-    sha256 "29bdc3a7c774390e879a90630abe6625e9ace7c7952a40c65d19ab8aa1c0030c"
+    url "https://github.com/kryptic-sh/tmxr/releases/download/v0.11.0/tmxr-v0.11.0-x86_64-apple-darwin.tar.gz"
+    sha256 "9e01d647cab3a8c47b3f45824e6955ff8ce94bed94679f67ad03b49ba7d507b1"
   end
 
   def install
