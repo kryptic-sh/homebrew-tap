@@ -5,7 +5,7 @@
 class Krypt < Formula
   desc "Cross-platform dotfiles manager. Rust binary. Config-driven."
   homepage "https://github.com/kryptic-sh/krypt"
-  version "0.4.4"
+  version "0.5.0"
   license "MIT"
 
   # Homebrew loads each formula for every OS and architecture when it taps
@@ -14,12 +14,12 @@ class Krypt < Formula
   depends_on :macos
 
   on_arm do
-    url "https://github.com/kryptic-sh/krypt/releases/download/v0.4.4/krypt-v0.4.4-aarch64-apple-darwin.tar.gz"
-    sha256 "a47029bb77b52e74cc4ced9705b9c6ec41050e03304b9b36caaaedf95ffec4dd"
+    url "https://github.com/kryptic-sh/krypt/releases/download/v0.5.0/krypt-v0.5.0-aarch64-apple-darwin.tar.gz"
+    sha256 "eee6ce99427d2b9dfd3defedf6d42f081de74b2fec4612f9b5ba892aee688d2e"
   end
   on_intel do
-    url "https://github.com/kryptic-sh/krypt/releases/download/v0.4.4/krypt-v0.4.4-x86_64-apple-darwin.tar.gz"
-    sha256 "ee91c2fb30c54d0b92ea1313925581f3fbe4b327acf0aab84d797fff696ceaba"
+    url "https://github.com/kryptic-sh/krypt/releases/download/v0.5.0/krypt-v0.5.0-x86_64-apple-darwin.tar.gz"
+    sha256 "14a7570cbbe53ea95300f2aa8be7ced4279fb3e8dcfcf67fabc67c02f44208c0"
   end
 
   def install
