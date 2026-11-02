@@ -5,7 +5,7 @@
 class Lyr < Formula
   desc "Desktop status bar for Wayland, Windows and macOS"
   homepage "https://github.com/kryptic-sh/lyr"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   # Homebrew loads each formula for every OS and architecture when it taps
@@ -14,12 +14,12 @@ class Lyr < Formula
   depends_on :macos
 
   on_arm do
-    url "https://github.com/kryptic-sh/lyr/releases/download/v0.5.0/lyr-v0.5.0-aarch64-apple-darwin.tar.gz"
-    sha256 "8a8cc3060e107d52ddb252d3fbbdb834d5b60ac1eecfd7887291571048a2a2b6"
+    url "https://github.com/kryptic-sh/lyr/releases/download/v0.5.1/lyr-v0.5.1-aarch64-apple-darwin.tar.gz"
+    sha256 "25bd238f4e16bacc3dc3de311244973ee4207ad407656ab40e39f0dab486b0db"
   end
   on_intel do
-    url "https://github.com/kryptic-sh/lyr/releases/download/v0.5.0/lyr-v0.5.0-x86_64-apple-darwin.tar.gz"
-    sha256 "9dd7ffbe916b6ca8e698e84f0da9b1ee0fc6da6a13159bf9a04d272453c79256"
+    url "https://github.com/kryptic-sh/lyr/releases/download/v0.5.1/lyr-v0.5.1-x86_64-apple-darwin.tar.gz"
+    sha256 "378d83402b446ff464bbc47716433468a99c0e4d600d2a871b0c83b64f75fa06"
   end
 
   def install
