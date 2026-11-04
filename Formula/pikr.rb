@@ -5,7 +5,7 @@
 class Pikr < Formula
   desc "Vim-modal application launcher — rofi replacement"
   homepage "https://pikr.kryptic.sh/"
-  version "0.9.7"
+  version "0.9.8"
   license "MIT"
 
   # Homebrew loads each formula for every OS and architecture when it taps
@@ -14,12 +14,12 @@ class Pikr < Formula
   depends_on :macos
 
   on_arm do
-    url "https://github.com/kryptic-sh/pikr/releases/download/v0.9.7/pikr-v0.9.7-aarch64-apple-darwin.tar.gz"
-    sha256 "dc3b0b6f1835da956ae5c4b0d95f2d16e0b04d401b2ec907e1b1ce7cf5b5490c"
+    url "https://github.com/kryptic-sh/pikr/releases/download/v0.9.8/pikr-v0.9.8-aarch64-apple-darwin.tar.gz"
+    sha256 "c86902dbb0795fc649518d490fe255b262b2c6ceaba929fb5e785118cbc1b1f5"
   end
   on_intel do
-    url "https://github.com/kryptic-sh/pikr/releases/download/v0.9.7/pikr-v0.9.7-x86_64-apple-darwin.tar.gz"
-    sha256 "91a30761020f7bae09b672bb846b9b4fc80699fdac69e094819b18e3399b2c18"
+    url "https://github.com/kryptic-sh/pikr/releases/download/v0.9.8/pikr-v0.9.8-x86_64-apple-darwin.tar.gz"
+    sha256 "b3f06230495ffd303c729adba9ba16e3953782df37549b3cd916048971760102"
   end
 
   def install
