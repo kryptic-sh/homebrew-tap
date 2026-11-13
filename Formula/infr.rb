@@ -5,7 +5,7 @@
 class Infr < Formula
   desc "Pure-Rust LLM inference engine with an OpenAI-compatible server"
   homepage "https://github.com/kryptic-sh/infr"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   # Homebrew loads each formula for every OS and architecture when it taps
@@ -14,12 +14,12 @@ class Infr < Formula
   depends_on :macos
 
   on_arm do
-    url "https://github.com/kryptic-sh/infr/releases/download/v0.2.0/infr-v0.2.0-aarch64-apple-darwin.tar.gz"
-    sha256 "9fdfee5a5eb7cee3462b6f6ed69c99b8a04b2a2b0f0997b85040b88215259f4d"
+    url "https://github.com/kryptic-sh/infr/releases/download/v0.3.0/infr-v0.3.0-aarch64-apple-darwin.tar.gz"
+    sha256 "43410280ea15c8a30ead0d6fe088b3d1ac015f48ef65653da8c966cab6c1c01c"
   end
   on_intel do
-    url "https://github.com/kryptic-sh/infr/releases/download/v0.2.0/infr-v0.2.0-x86_64-apple-darwin.tar.gz"
-    sha256 "ecb01a104d4494dbb301dbedfe861afe5acea01a70f1bc903501e1d5e46e379e"
+    url "https://github.com/kryptic-sh/infr/releases/download/v0.3.0/infr-v0.3.0-x86_64-apple-darwin.tar.gz"
+    sha256 "f302b249c857ea6cb8b5dbf44bfcbad4ac8dafd67817c2b0d0c207553877d590"
   end
 
   def install
